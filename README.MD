@@ -9,8 +9,7 @@
 ![alt](src/imageScreenShot/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202022-09-29%20at%2012.02.01.png)
 
 ### Image do projeto em Android  
-
-![alt](src/imageScreenShot/Screenshot_1664501491.png =100x20)
+<image src="./src/imageScreenShot/Screenshot_1664501491.png" width="100" height="20" />
 
 ------------------
 
