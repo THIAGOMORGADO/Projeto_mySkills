@@ -6,7 +6,7 @@
 ----------
 ### Image do projeto em ios 
 
-![alt](src/imageScreenShot/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202022-09-29%20at%2012.02.01.png)
+<image src="./src/imageScreenShot/Simulator Screen Shot - iPhone 14 Pro - 2022-09-29 at 12.02.01.png" width="250" height="500" />
 
 ### Image do projeto em Android  
 <image src="./src/imageScreenShot/Screenshot_1664501491.png" width="250" height="500" />
