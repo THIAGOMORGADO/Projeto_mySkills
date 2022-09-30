@@ -11,13 +11,30 @@ import {
 import {Button} from '../components/Button/Button';
 import {SkillCard} from '../components/SkillCard/Card';
 
+
+interface SkillData {
+  id: string;
+  name: string;
+}
+
 export function Home() {
   const [newSkills, setNewSkills] = useState('');
-  const [mySkills, setMySkills] = useState([]);
+  const [mySkills, setMySkills] = useState<SkillData[]>([]);
   const [grettings, setGrettings] = useState(); // Armazendo hora no state
 
   function handleAddNewSkill() {
-    setMySkills(oldState => [...oldState, newSkills]);
+    const data = {
+      id: String(new Date().getTime()),
+      name: newSkills,
+
+    }
+    setMySkills(oldState => [...oldState, data]);
+  }
+
+  function handleRemoveSkill(id: string) {
+    setMySkills(oldState => oldState.filter(
+      skill => skill.id !== id
+    ))
   }
   // Utiliizando useEffect para roda funçao Hora
   useEffect(() => {
@@ -25,11 +42,11 @@ export function Home() {
 
     // Verificando ox Horaios e retornando repota para o cliente
     if (currentHours < 12) {
-      setGrettings('good monging');
+      setGrettings('Good morning');
     } else if (currentHours >= 12 && currentHours < 18) {
-      setGrettings('good afternoon');
+      setGrettings('Good afternoon');
     } else {
-      setGrettings('good night');
+      setGrettings('Good night');
     }
   }, []);
 
@@ -52,9 +69,10 @@ export function Home() {
       <FlatList
         showsVerticalScrollIndicator={false}
         data={mySkills}
-        keyExtractor={item => item}
-        renderItem={({item}) => <SkillCard skill={item} />}
-      />
+        keyExtractor={item => item.id}
+        renderItem={({item}) => <SkillCard skill={item.name} 
+        onPress={() => handleRemoveSkill(item.id)}/>
+      }/>
     </View>
   );
 }
