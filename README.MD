@@ -10,7 +10,7 @@
 
 ### Image do projeto em Android  
 
-![alt](src/imageScreenShot/Screenshot_1664501491.png)
+![alt](src/imageScreenShot/Screenshot_1664501491.png =250x)
 
 ------------------
 
