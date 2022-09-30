@@ -5,11 +5,8 @@
 
 ----------
 ### Image do projeto em ios e android
-<p float="left">
-<image src="/src/imageScreenShot/Simulator Screen Shot - iPhone 14 Pro - 2022-09-29 at 12.02.01.png" width="250" height="500" />
-----------------------------------------------------------------
-<image src="./src/imageScreenShot/Screenshot_1664501491.png" width="250" height="500" />  
-</p>
+
+<image src="/src/imageScreenShot/Simulator Screen Shot - iPhone 14 Pro - 2022-09-29 at 12.02.01.png" width="250" height="500" /> /<image src="./src/imageScreenShot/Screenshot_1664501491.png" width="250" height="500" />  
 
 
 
